@@ -12,8 +12,9 @@ llhandler = LiteLoggerHandler(
 	API_KEY,
 )
 
-# add handler to logger
+# add handler to logger and set level
 log.addHandler(llhandler)
+log.setLevel('INFO')
 
 log.info('Some Log Message!', extra={
 	'metadata': {'some_important_key': 'that keys value'},
