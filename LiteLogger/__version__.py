@@ -18,7 +18,7 @@
 __title__ = 'LiteLogger'
 __description__ = 'The official LiteLogger client for Python'
 __url__ = 'https://litelogger.com/'
-__version__ = '0.1.00'
+__version__ = '0.1.1'
 __author__ = 'Marc Leonard'
 __author_email__ = 'contact@litelogger.com'
 __license__ = 'GNU GPLv3'
