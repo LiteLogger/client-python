@@ -58,11 +58,13 @@ class LiteLoggerHandler(logging.Handler):
         if hasattr(record, 'tags'):
             tags = record.tags
 
+        level_lowercase = str(record.levelname).lower()
+
         d = json.dumps(
             {
                 "stream_name": self.stream_name,
                 'msg': record.msg,
-                'level': record.levelname,
+                'level': level_lowercase,
                 'event_time': milliseconds_epoc,
                 'tags': tags,
                 'metadata': metadata
